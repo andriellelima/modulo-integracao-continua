@@ -14,4 +14,4 @@ jobs:
           java-version: '11'
           distribution: 'zulu'
       - name: Maven Compile/Test/Package
-        run: mvn --active-profiles prod package
+        run: mvn --activate-profiles prod package
