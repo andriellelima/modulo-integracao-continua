@@ -1,11 +1,11 @@
 name: CI Workflow Branches
-on: 
+on:
   push:
     branches:
-      - '**
+      - '**'
       - '!main'
 jobs:
-  primeiro-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,3 +22,4 @@ jobs:
           type: now
           target_branch: main
           github_token: ${{ github.token }}
+ 
