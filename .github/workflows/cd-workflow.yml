@@ -2,12 +2,12 @@ name: Deploy Workflow
 on:
   schedule:
     - cron: '*/5 * * * *'
-    workflow_dispatch:
+  workflow_dispatch:
       
 jobs:
   ci:
     name: CI Workflow Main
-    uses: ././github/workflows/ci-workflow-main.yml
+    uses: ././.github/workflows/ci-workflow-main.yml
   
   debloy-heroku:
     needs: ci
