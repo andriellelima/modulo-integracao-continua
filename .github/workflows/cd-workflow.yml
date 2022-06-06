@@ -1,9 +1,12 @@
 name: Deploy Workflow
 
 on:
-  schedule:
-    - cron: '0 23 * * *'
-  workflow_dispatch:
+ push:
+    branches:
+      - 'main'
+#   schedule:
+#     - cron: '0 23 * * *'
+#   workflow_dispatch:
       
 jobs:
   ci:
